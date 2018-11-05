@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import argparse
 import csv
-import re
 
 def checkForDowntime(time1, time2, maxDowntimeMins):
     (time1H, time1M) = time1.split(':')
