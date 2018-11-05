@@ -35,7 +35,7 @@ def main():
         times = []
 
         for row in reader:
-            time = row['\xef\xbb\xbfTime'][-5:]
+            time = row['\xef\xbb\xbfTime'][-5:] # Select only the time, not the date
             times.append(time)
 
         for index, time in enumerate(times):
